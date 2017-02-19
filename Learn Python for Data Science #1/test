@@ -1,0 +1,14 @@
+from sklearn import tree
+
+#parameters
+X = [[0],[1],[0]]
+
+Y = ['male', 'female', 'male']
+
+clf = tree.DecisionTreeClassifier()
+clf = clf.fit(X,Y)
+
+#spejami parameters
+prediction = clf.predict([[1]])
+
+print (prediction)
